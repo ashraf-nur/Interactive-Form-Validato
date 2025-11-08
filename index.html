@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="registrationForm">
+    <h2>Register</h2>
+
+    <!-- Username -->
+    <div class="form-control">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter username" required>
+      <small></small>
+      <p id="username-counter">0 / 15</p>
+    </div>
+
+    <!-- Password -->
+    <div class="form-control">
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Enter password" required>
+        <button type="button" id="togglePassword">Show</button>
+      </div>
+      <small></small>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="form-control">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+      <small></small>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-control">
+      <label for="phone">Phone (optional)</label>
+      <input type="text" id="phone" placeholder="e.g. 017XXXXXXXX">
+      <small></small>
+    </div>
+
+    <!-- Age -->
+    <div class="form-control">
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter age" required>
+      <small></small>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" id="submitBtn" disabled>Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
